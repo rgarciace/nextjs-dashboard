@@ -1,0 +1,9 @@
+.content {
+  background-color: var(--color-complement);
+  color: var(--color-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  height: 75px;
+}

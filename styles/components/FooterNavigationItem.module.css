@@ -1,0 +1,18 @@
+.link {
+  color: rgb(97, 97, 97);
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+}
+.link:hover {
+  background-color: rgba(97, 97, 97, 0.25);
+}
+
+.linkActive {
+  color: var(--color-green);
+  background-color: rgba(97, 97, 97, 0.25);
+}
