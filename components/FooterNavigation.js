@@ -8,7 +8,7 @@ const FooterNavigation = () => {
       <FooterNavigationItem text="Home" path="/" >
         <HomeSimple />
       </FooterNavigationItem>
-      <FooterNavigationItem text="Velocidad de Carga" path="/#" >
+      <FooterNavigationItem text="Velocidad de Carga" path="/load-speed" >
         <Flash />
       </FooterNavigationItem>
     </nav>
