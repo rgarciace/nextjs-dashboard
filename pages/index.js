@@ -1,5 +1,8 @@
 import Head from 'next/head'
+import { Sora } from '@next/font/google'
 import Footer from '/components/Footer'
+
+const sora = Sora()
 
 export default function Home() {
   return (
@@ -11,7 +14,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Footer />
+      <div className={sora.className}>
+        
+        <Footer />
+      </div>
     </>
   )
 }
