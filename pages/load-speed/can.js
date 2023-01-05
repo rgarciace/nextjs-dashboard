@@ -1,10 +1,13 @@
 import Head from 'next/head'
-import { Sora } from '@next/font/google'
 import Footer from '/components/Footer'
 import styles from '/styles/Home.module.css'
 import Header from '../../components/Header'
 
-const sora = Sora()
+const options = [
+  { text: "Velocidad CAN", path: "/load-speed/can" },
+  { text: "Velocidad USA", path: "/load-speed/usa" },
+  { text: "Reportes", path: "/load-speed/reportes" },
+]
 
 export default function LoadSpeedCan() {
   return (
@@ -16,9 +19,9 @@ export default function LoadSpeedCan() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={sora.className}>
-        <main className={styles.main}>
-          <Header title="Velocidad de Carga" />
+      <div>
+        <main className="main">
+          <Header title="Velocidad de Carga" options={options} />
         </main>
         <Footer />
       </div>

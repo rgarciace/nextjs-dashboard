@@ -1,10 +1,8 @@
 import Head from 'next/head'
-import { Sora } from '@next/font/google'
 import Footer from '/components/Footer'
 import styles from '/styles/Home.module.css'
 import Header from '../components/Header'
 
-const sora = Sora()
 
 export default function Home() {
   return (
@@ -16,9 +14,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={sora.className}>
-        <main className={styles.main}>
-          <Header title="Inicio"/>
+      <div>
+        <main className="main">
+          <Header />
         </main>
         <Footer />
       </div>
