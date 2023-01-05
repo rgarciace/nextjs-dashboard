@@ -5,10 +5,10 @@ import styles from '/styles/components/FooterNavigation.module.css'
 const FooterNavigation = () => {
   return (
     <nav className={styles.navigation}>
-      <FooterNavigationItem text="Home" path="/" >
+      <FooterNavigationItem text="Home" paths={["/"]} >
         <HomeSimple />
       </FooterNavigationItem>
-      <FooterNavigationItem text="Velocidad de Carga" path="/load-speed/can" >
+      <FooterNavigationItem text="Velocidad de Carga" paths={["/load-speed/can", "/load-speed", "/load-speed/usa", "/load-speed/reports"]} >
         <Flash />
       </FooterNavigationItem>
     </nav>
