@@ -7,6 +7,7 @@
   gap: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--color-gray);
+  position: relative;
 }
 .information {
   display: flex;
@@ -18,11 +19,13 @@
 }
 .others {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 .inputSearch {
   border: 1px solid var(--color-gray);
   width: 250px;
+  height: 40px;
   border-radius: 25px;
   padding: 0 15px;
   box-shadow: var(--shadow-small);
@@ -36,10 +39,11 @@
   border: 1px solid var(--color-complement);
 }
 .searchBar,
-.buttonSearch {
+.buttonMobile {
   all: unset;
+  align-items: center;
 }
-.buttonSearch {
+.buttonMobile {
   display: none;
 }
 .user {
@@ -48,7 +52,6 @@
   background-color: blue;
   border-radius: 25px;
 }
-
 .optionsGroup {
   display: flex;
   gap: 20px;
@@ -58,20 +61,77 @@
   text-decoration: none;
   color: var(--color-gray);
 }
-
 .optionActive {
   color: var(--color-complement);
   font-weight: 600;
 }
 
-
-
-
+.mobileMenu,
+.mobileSearchBar {
+  display: none;
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  background-color: white;
+  width: 100%;
+  padding: 10px 0;
+  transition: 0.3s all;
+  border-bottom: 1px solid var(--color-gray);
+  transform: translateY(-300%);
+}
+.mobileMenuActive,
+.mobileSearchBarActive {
+  transform: translateX(0);
+}
+.mobileInputSearch {
+  all: unset;
+  width: 100%;
+  font-size: 14px;
+}
+.mobileNav {
+  display: flex;
+  gap: 15px;
+}
 @media screen and (max-width: 1024px) {
-  .buttonSearch {
-    display: block;
+  .centered {
+    padding: 15px;
+  }
+  .mobileMenu,
+  .mobileSearchBar {
+    display: flex;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .optionsGroup {
+    display: none;
+  }
+  .option {
+    font-size: 14px;
+  }
+  .others {
+    gap: 10px;
+  }
+  .buttonMobile {
+    display: flex;
+    align-items: center;
   }
   .inputSearch {
     display: none;
+  }
+  .user {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .title {
+    font-size: 16px;
+  }
+  .option {
+    font-size: 12px;
+  }
+  .mobileInputSearch {
+    font-size: 12px;
   }
 }
