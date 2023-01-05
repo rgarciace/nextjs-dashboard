@@ -1,10 +1,17 @@
+@font-face {
+  font-family: Sora;
+  src: url(/public/fonts/Sora.ttf);
+}
+
 :root {
   --color-background: #ffffff;
   --color-complement: #121212;
   --color-green: #9ee96e;
   --color-purple: #a3a7f5;
-  --shadow-low: 3px 6px 0 rgba(97, 97, 97, 0.8);
-  --shadow-high: 5px 8px 0 rgba(97, 97, 97, 0.8);
+  --color-gray: #616161;
+  --shadow-small: 1px 4px 0 rgba(97, 97, 97, 0.8);
+  --shadow-medium: 3px 6px 0 rgba(97, 97, 97, 0.8);
+  --shadow-large: 5px 8px 0 rgba(97, 97, 97, 0.8);
 }
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -21,6 +28,10 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: Sora;
+}
+.main {
+  min-height: calc(100vh - 75px);
 }
 /* @media (prefers-color-scheme: dark) {
   html {
