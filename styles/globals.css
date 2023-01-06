@@ -31,7 +31,13 @@ body {
   font-family: Sora;
 }
 .main {
+  display: flex;
+  flex-direction: column;
   min-height: calc(100vh - 75px);
+}
+.body {
+  padding: 15px 30px;
+  flex: auto;
 }
 /* @media (prefers-color-scheme: dark) {
   html {
