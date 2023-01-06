@@ -1,14 +1,9 @@
 import MainLayout from '/components/MainLayout'
-
-const options = [
-  { text: "Velocidad CAN", path: "/load-speed/can" },
-  { text: "Velocidad USA", path: "/load-speed/usa" },
-  { text: "Reportes", path: "/load-speed/reports" },
-]
+import { pathLoadSpeed } from '/utils/configPaths'
 
 const LoadSpeedUsa = () => {
   return (
-    <MainLayout title="Velocidad de USA" titleHeader="Velocidad de Carga" options={options}>
+    <MainLayout title="Velocidad de USA" titleHeader="Velocidad de Carga" options={pathLoadSpeed}>
       <p>Cuerpo de USA</p>
     </MainLayout>
   )
