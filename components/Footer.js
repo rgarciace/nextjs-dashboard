@@ -4,9 +4,9 @@ import styles from '/styles/components/Footer.module.css'
 const Footer = () => {
   return (
     <div className={styles.content}>
-      <h2>LOGO</h2>
+      <h2 className={styles.logo}>LOGO</h2>
       <FooterNavigation />
-      <p>mypage.dev</p>
+      <p className={styles.myPage}>mypage.dev</p>
     </div>
   )
 }

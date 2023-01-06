@@ -7,3 +7,17 @@
   padding: 15px 30px;
   height: 75px;
 }
+
+@media screen and (max-width: 640px) {
+  .content {
+    /* justify-content: center; */
+    padding: 15px;
+    height: auto;
+  }
+  /* .logo {
+    
+  } */
+  .myPage {
+    display: none;
+  }
+}
