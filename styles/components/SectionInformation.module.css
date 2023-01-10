@@ -1,0 +1,9 @@
+.container {
+  width: calc(100% - 50px);
+}
+.description {
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
