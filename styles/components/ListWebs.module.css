@@ -1,0 +1,44 @@
+.websList,
+.webItem {
+  all: unset;
+  margin: 0;
+  padding: 0;
+}
+.websList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.webItem {
+  border: 1px solid var(--color-complement);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+}
+.webItemName {
+  width: 30%;
+}
+.webItemUrl {
+  flex: 1;
+} 
+.webItemDelete {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: .3s all;
+  gap: 5px;
+}
+.webItem:first-child>.webItemDelete {
+  visibility: hidden;
+}
+.webItemDelete>span {
+  width: 0;
+  transition: .3s all;
+}
+.webItemDelete:hover>span{
+  width: 70px;
+}
