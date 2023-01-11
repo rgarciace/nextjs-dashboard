@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  gap: 15px;
+  font-size: 13px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 5px
+}
+.item::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  /* background-color: red; */
+}
+.item.first::before {
+  background-color: var(--color-green);
+}
+.item.second::before {
+  background-color: var(--color-purple);
+}
+.item.third::before {
+  background-color: var(--color-gray);
+}
