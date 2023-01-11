@@ -36,8 +36,15 @@ body {
   min-height: calc(100vh - 75px);
 }
 .body {
+  min-height: calc(100vh - 75px - 110px);
+  max-height: calc(100vh - 75px - 110px);overflow-y: hidden;
   padding: 15px 30px;
   flex: auto;
+}
+@media screen and (max-width: 1280px) {
+  .body {
+    padding: 0 15px 15px;
+  }
 }
 /* @media (prefers-color-scheme: dark) {
   html {

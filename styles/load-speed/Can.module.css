@@ -1,8 +1,31 @@
-.section {
+.main {
+  display: flex;
+  gap: 15px;
+}
+.containerHalf {
   width: 50%;
   max-width: 50%;
+  max-height: calc(100vh - 230px);
+  min-height: calc(100vh - 230px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .headerSection {
   display: flex;
   gap: 10px;
+}
+.bodySection {
+  overflow-y: auto;
+}
+@media screen and (max-width: 1280px) {
+  .main {
+    flex-direction: column;
+  }
+  .containerHalf {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+    max-height: none;
+  }
 }
