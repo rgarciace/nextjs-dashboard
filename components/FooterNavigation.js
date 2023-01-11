@@ -11,7 +11,7 @@ const FooterNavigation = () => {
       <FooterNavigationItem text="Velocidad de Carga" paths={["/load-speed/can", "/load-speed", "/load-speed/usa", "/load-speed/reports"]} >
         <Flash />
       </FooterNavigationItem>
-      <FooterNavigationItem text="Transportadoras" paths={["/carriers"]} >
+      <FooterNavigationItem text="Transportadoras" paths={["/carriers/update-data"]} >
         <BoxIso />
       </FooterNavigationItem>
       <FooterNavigationItem text="Tiendas" paths={["/stores"]} >
